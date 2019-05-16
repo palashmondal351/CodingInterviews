@@ -14,7 +14,7 @@ def result(ap,gp):
         rval=gp-ap
         l=[]
         for val in value:
-            where(rval>=val):
+            while(rval>=val):
                 l.append(val)
                 rval-=val
         reamt=sorted([paise[k] for k in l])
